@@ -43,8 +43,12 @@ page 51002 "License Information"
                 ApplicationArea = All;
                 Caption = 'Import License';
                 Image = Import;
+#pragma warning disable AL0729
                 Promoted = true;
+#pragma warning restore AL0729
+#pragma warning disable AL0729
                 PromotedOnly = true;
+#pragma warning restore AL0729
                 ToolTip = 'Imports the selected license.';
 
                 trigger OnAction()
@@ -59,8 +63,12 @@ page 51002 "License Information"
                 ApplicationArea = All;
                 Caption = 'Export Used and Unused Objects in License';
                 Image = Export;
+#pragma warning disable AL0729
                 Promoted = true;
+#pragma warning restore AL0729
+#pragma warning disable AL0729
                 PromotedOnly = true;
+#pragma warning restore AL0729
                 ToolTip = 'Creates a list with all used and unused objects in the license.';
                 RunObject = Report "Export Objects in License";
             }
@@ -69,8 +77,12 @@ page 51002 "License Information"
                 ApplicationArea = All;
                 Caption = 'Export Unlicensed Objects';
                 Image = Export;
+#pragma warning disable AL0729
                 Promoted = true;
+#pragma warning restore AL0729
+#pragma warning disable AL0729
                 PromotedOnly = true;
+#pragma warning restore AL0729
                 ToolTip = 'Creates a list with all unlicensed objects.';
                 RunObject = Report "Export Unlicensed Objects";
             }

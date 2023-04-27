@@ -486,7 +486,9 @@ page 51004 "Table Editor"
 
         // TODO: Bind locally defined codeunit with manual subscriber to codeunit 423 "Change Log Management", EventPublisher OnAfterIsAlwaysLoggedTable(TableID: Integer; var AlwaysLogTable: Boolean),
         //       set AlwaysLogTable := true in order to log all changes
+#pragma warning disable AL0667
         RecordRef.FindSet(true, false);
+#pragma warning restore AL0667
         repeat
             RecordRef2 := RecordRef.Duplicate();
             FieldRef := RecordRef.Field(FieldNumber);
@@ -557,7 +559,9 @@ page 51004 "Table Editor"
         // TODO: Bind locally defined codeunit with manual subscriber to codeunit 423 "Change Log Management", EventPublisher OnAfterIsAlwaysLoggedTable(TableID: Integer; var AlwaysLogTable: Boolean),
         //       set AlwaysLogTable := true in order to log all changes
 
+#pragma warning disable AL0667
         RecordRef.FindSet(true, true);
+#pragma warning restore AL0667
         repeat
             s := RecordRef.GetPosition();
             RecordRef3 := RecordRef.Duplicate();

@@ -534,14 +534,20 @@ codeunit 51000 "Admin Tool Mgt."
         SetSuggestedTable(Database::"Ins. Coverage Ledger Entry");
         SetSuggestedTable(Database::"Insurance Register");
 #pragma warning disable AL0432
-        SetSuggestedTable(Database::"Integration Record");
-        SetSuggestedTable(Database::"Integration Record Archive");
+#pragma warning disable AL0433
+        //SetSuggestedTable(Database::"Integration Record");
+#pragma warning restore AL0433
+#pragma warning disable AL0433
+        //SetSuggestedTable(Database::"Integration Record Archive");
+#pragma warning restore AL0433
 #pragma warning restore AL0432
         SetSuggestedTable(Database::"Inter. Log Entry Comment Line");
         SetSuggestedTable(Database::"Interaction Log Entry");
         SetSuggestedTable(Database::"Internal Movement Header");
         SetSuggestedTable(Database::"Internal Movement Line");
+#pragma warning disable AL0432
         SetSuggestedTable(Database::"Intrastat Jnl. Line");
+#pragma warning restore AL0432
         SetSuggestedTable(Database::"Inventory Adjmt. Entry (Order)");
         SetSuggestedTable(Database::"Inventory Period Entry");
         SetSuggestedTable(Database::"Inventory Report Entry");

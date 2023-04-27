@@ -58,10 +58,18 @@ page 51003 "Record Deletion"
                 ApplicationArea = All;
                 Caption = 'Edit Table';
                 Image = EditLines;
+#pragma warning disable AL0729
                 Promoted = true;
+#pragma warning restore AL0729
+#pragma warning disable AL0729
                 PromotedCategory = Process;
+#pragma warning restore AL0729
+#pragma warning disable AL0729
                 PromotedIsBig = true;
+#pragma warning restore AL0729
+#pragma warning disable AL0729
                 PromotedOnly = true;
+#pragma warning restore AL0729
                 ToolTip = 'Opens the table editor where you can edit or delete selected records.';
                 trigger OnAction()
                 begin
